@@ -1,0 +1,12 @@
+@import "../node_modules/vue-live/lib/style.css";
+@import "../node_modules/prism-themes/themes/prism-vsc-dark-plus.min.css";
+
+.prism-editor-wrapper {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 8px 12px;
+}
+
+.VueLivePreview {
+  padding: 8px 12px;
+}

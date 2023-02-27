@@ -1,0 +1,57 @@
+name: Linting and tests
+
+on:
+  push:
+    paths-ignore:
+      - "docs/**"
+      - ".github/workflows/documentation.yml"
+    branches:
+      - main
+  pull_request:
+    paths-ignore:
+      - "docs/**"
+      - ".github/workflows/documentation.yml"
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup
+        uses: ./.github/actions/setup
+      - name: Lint
+        run: yarn lint
+  type_check:
+    name: Type check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup
+        uses: ./.github/actions/setup
+      - name: Type check
+        run: yarn type-check
+  test_vue2:
+    name: Test (Vue 2)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup
+        uses: ./.github/actions/setup
+      - name: Test (Vue 2)
+        run: yarn test:vue2
+  test_vue3:
+    name: Test (Vue 3)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Setup
+        uses: ./.github/actions/setup
+      - name: Test (Vue 3)
+        run: yarn test:vue3
