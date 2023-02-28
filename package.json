@@ -31,7 +31,7 @@
     "test:vue3": "vue-demi-switch 3 && vitest --environment jsdom --root src/",
     "test:coverage": "vue-demi-switch 3 && vitest --environment jsdom --root src/ --coverage",
     "build": "vite build",
-    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "type-check": "vue-tsc --noEmit --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
