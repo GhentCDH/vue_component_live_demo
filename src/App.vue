@@ -1,8 +1,7 @@
 <template>
-  <Example />
-  <Example message="Hello universe" />
+  <LiveDemo />
 </template>
 
 <script setup lang="ts">
-import { Example } from "./VueComponentTemplate";
+import { LiveDemo } from "./VueComponentLiveDemo";
 </script>

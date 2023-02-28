@@ -1,3 +1,3 @@
-# vue_component_template
+# vue_component_live_demo
 
-`vue_component_template` contains [components](/components/) to display a message for Vue 2 and Vue 3.
+`vue_component_live_demo` contains a [component](/components/live-demo.md) to demo components for Vue 3, build on top of vue-live.

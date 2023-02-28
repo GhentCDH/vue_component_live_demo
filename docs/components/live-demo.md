@@ -2,15 +2,13 @@
 
 <!-- markdownlint-disable MD033 -->
 <script setup>
-import { VueLive } from "vue-live";
-import { Example } from "../../src/VueComponentTemplate";
-import "../vue-live.scss";
+import { LiveDemo } from "../../src/VueComponentLiveDemo";
 
 const DefaultExample = `<Example />`
 const OtherExample = `<Example message="Hello universe" />`
 </script>
 
-`Example` is a component to display a message.
+`LiveDemo` is a component to demo components.
 
 ## Message
 

@@ -14,12 +14,12 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: resolve(__dirname, "src/VueComponentTemplate.ts"),
-      name: "VueComponentTemplate",
+      entry: resolve(__dirname, "src/VueComponentLiveDemo.ts"),
+      name: "VueComponentLiveDemo",
       formats: ["es", "cjs"],
       fileName: (format) => {
-        if (format === "es") return "vue-component-template.es.js";
-        if (format === "cjs") return "vue-component-template.cjs";
+        if (format === "es") return "vue-component-live-demo.es.js";
+        if (format === "cjs") return "vue-component-live-demo.cjs";
         return "";
       },
     },
