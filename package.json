@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@babel/types": "^7.21.2",
+    "@ghentcdh/vue-component-text": "^0.0.5",
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/jsdom": "^21.1.0",
     "@types/node": "^18.13.0",

@@ -458,6 +458,13 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@ghentcdh/vue-component-text@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@ghentcdh/vue-component-text/-/vue-component-text-0.0.5.tgz#28f08395c6a9755db5ae0a8c09f95a23696948c9"
+  integrity sha512-RMe5S7kfHFa4gsyfhN2TNRdIIhAPGXHyFnyDasZVT/4uw5JcYS2yMHJWrqAt/gS854tPbyQZK+/odRwiuJA0mw==
+  dependencies:
+    vue-demi "^0.13.11"
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"

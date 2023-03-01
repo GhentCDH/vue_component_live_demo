@@ -1,3 +1,3 @@
 # Components
 
-* [Example](/components/example) - Display a message
+* [LiveDemo](/components/live-demo) - Display a message
