@@ -1,16 +1,21 @@
 <template>
-  <LiveDemo :code="test">
+  <h2>Component</h2>
+  <LiveDemo :components="{ Paragraph }">
     <Paragraph
-      :id="testId"
+      id="testId"
       :number="5"
       :lines="[{ id: '1', content: 'Content' }]"
       @click="test = '<div>something</div>'"
     />
   </LiveDemo>
 
-  <LiveDemo :code="test">
+  <h2>Html</h2>
+  <LiveDemo>
     <span>Start <span>Inner</span> End</span>
   </LiveDemo>
+
+  <h2>Prop</h2>
+  <LiveDemo :code="test" />
 
   <div @click="change">Change</div>
 </template>
@@ -21,11 +26,8 @@ import { LiveDemo } from "./VueComponentLiveDemo";
 import { Paragraph } from "@ghentcdh/vue-component-text";
 
 let test = ref("<div>Test</div>");
-let testId = ref("TestId");
 
 const change = function () {
   test.value = "<div>Change</div>";
 };
-
-const something = function () {};
 </script>
